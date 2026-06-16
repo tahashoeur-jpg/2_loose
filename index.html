@@ -1,0 +1,218 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:#fff;color:#1a1a1a}
+a{color:#00536A;text-decoration:none}
+a:hover{text-decoration:underline}
+
+.hdr{background:#00536A;padding:1.75rem 2rem;display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.hdr-logo{height:68px;background:#fff;border-radius:6px;padding:7px 12px}
+.hdr-text h1{font-family:'Poppins',sans-serif;font-weight:900;font-size:1.75rem;color:#fff;line-height:1.2}
+.hdr-text p{font-family:'DM Sans',sans-serif;font-size:.95rem;color:#F7A916;font-weight:500;margin-top:.35rem}
+
+.topbar{background:#003d4f;padding:.5rem 2rem;display:flex;gap:2rem;flex-wrap:wrap}
+.topbar a{font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:500;color:#cde9ef}
+.topbar a:hover{color:#F7A916;text-decoration:none}
+
+.hero{background:#F7A916;padding:1.5rem 2rem;text-align:center}
+.hero h2{font-family:'Poppins',sans-serif;font-weight:900;font-size:1.5rem;color:#00536A}
+.hero p{font-family:'DM Sans',sans-serif;font-size:.9rem;color:#00536A;font-weight:500;margin-top:.3rem}
+
+.sep{border:none;border-top:1px solid #d0ecf2}
+
+.wrap{max-width:880px;margin:0 auto;padding:2.25rem 1.75rem}
+
+.stitle{font-family:'Poppins',sans-serif;font-weight:700;font-size:1.1rem;color:#00536A;border-left:4px solid #F7A916;padding-left:.7rem;margin-bottom:1.25rem}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.9rem;margin-bottom:2rem}
+.card{background:#e8f5f8;border-radius:8px;padding:.9rem 1rem;border:1px solid #b2d9e3}
+.card .lbl{font-family:'DM Sans',sans-serif;font-size:.68rem;font-weight:700;color:#00536A;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.25rem}
+.card .val{font-family:'Poppins',sans-serif;font-weight:600;font-size:.9rem;color:#00536A}
+
+.acc{margin-bottom:.5rem;border:1px solid #b2d9e3;border-radius:8px;overflow:hidden}
+.acc-btn{width:100%;background:#e8f5f8;border:none;padding:.85rem 1rem;text-align:left;font-family:'Poppins',sans-serif;font-weight:600;font-size:.88rem;color:#00536A;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.acc-btn:hover{background:#c8e6ed}
+.acc-icon{color:#F7A916;font-size:1.2rem;font-weight:700;transition:transform .25s;line-height:1}
+.acc-body{display:none;padding:.85rem 1rem;background:#fff;font-family:'DM Sans',sans-serif;font-size:.88rem;line-height:1.75;color:#333;border-top:1px solid #d0ecf2}
+.acc-body.open{display:block}
+.acc-icon.open{transform:rotate(45deg)}
+
+/* VIDÉO — lien direct YouTube (erreur 153 : embedding désactivé) */
+.vid-block{background:#e8f5f8;border:1px solid #b2d9e3;border-radius:8px;padding:2rem 1.5rem;display:flex;flex-direction:column;align-items:center;gap:1rem;text-align:center}
+.vid-block p{font-family:'DM Sans',sans-serif;font-size:.9rem;color:#00536A;max-width:480px;line-height:1.6}
+.vid-btn{display:inline-flex;align-items:center;gap:.5rem;background:#00536A;color:#fff;padding:.75rem 1.5rem;border-radius:8px;font-family:'Poppins',sans-serif;font-weight:600;font-size:.95rem;text-decoration:none;border:2px solid #00536A;transition:background .18s,color .18s}
+.vid-btn:hover{background:#fff;color:#00536A;text-decoration:none}
+.vid-btn i{font-size:1.1rem}
+.vid-notice{font-family:'DM Sans',sans-serif;font-size:.78rem;color:#777;font-style:italic}
+
+.map-wrap{border-radius:8px;overflow:hidden;border:1px solid #b2d9e3}
+.map-wrap iframe{width:100%;height:310px;border:none;display:block}
+.map-addr{font-family:'DM Sans',sans-serif;font-size:.85rem;color:#555;margin-top:.6rem}
+
+.dl-row{display:flex;flex-wrap:wrap;gap:.9rem}
+.dl-btn{display:inline-flex;align-items:center;gap:.45rem;background:#00536A;color:#fff;padding:.65rem 1.2rem;border-radius:8px;font-family:'DM Sans',sans-serif;font-weight:500;font-size:.9rem;text-decoration:none;border:2px solid #00536A;transition:background .18s,color .18s}
+.dl-btn:hover{background:#fff;color:#00536A;text-decoration:none}
+.dl-btn i{font-size:1rem}
+
+.ftr{background:#00536A;padding:2rem 1.75rem}
+.ftr-in{max-width:880px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem}
+.ftr h3{font-family:'Poppins',sans-serif;font-weight:600;font-size:.9rem;color:#F7A916;margin-bottom:.5rem}
+.ftr p{font-family:'DM Sans',sans-serif;font-size:.85rem;color:#cde9ef;line-height:1.65}
+.ftr a{color:#cde9ef;text-decoration:underline}
+.ftr-btm{max-width:880px;margin:1.25rem auto 0;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.15);text-align:center;font-family:'DM Sans',sans-serif;font-size:.75rem;color:#8fbfca}
+</style>
+
+<h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Page de formation — Bluse à Toulouse — APF France handicap — 19 juin 2026</h2>
+
+<header class="hdr">
+  <img class="hdr-logo" src="logo.png" alt="Logo APF France handicap — Risquer l'impossible" onerror="this.style.display='none'">
+  <div class="hdr-text">
+    <h1>Bluse à Toulouse</h1>
+    <p>Formation professionnelle · APF France handicap</p>
+  </div>
+</header>
+
+<nav class="topbar" aria-label="Navigation">
+  <a href="#programme">Programme</a>
+  <a href="#formateur">Mot du formateur</a>
+  <a href="#lieu">Lieu</a>
+  <a href="#documents">Documents</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+  <h2>Bluse à Toulouse</h2>
+  <p>Inclusion · Engagement · Formation professionnelle</p>
+</div>
+
+<hr class="sep">
+
+<section class="wrap" id="programme">
+  <h2 class="stitle">Informations clés</h2>
+  <div class="cards">
+    <div class="card"><div class="lbl">Date</div><div class="val">19 juin 2026</div></div>
+    <div class="card"><div class="lbl">Adresse</div><div class="val">16 bd Masséna, 75013 Paris</div></div>
+    <div class="card"><div class="lbl">Formateur</div><div class="val">Marcelus WALLACE</div></div>
+    <div class="card"><div class="lbl">Organisme</div><div class="val">APF France handicap</div></div>
+  </div>
+
+  <h2 class="stitle">Programme de la formation</h2>
+
+  <div class="acc">
+    <button class="acc-btn" onclick="tog(this)" aria-expanded="false">
+      Module 1 — Introduction et cadre de la formation
+      <span class="acc-icon" aria-hidden="true">+</span>
+    </button>
+    <div class="acc-body">
+      Présentation des objectifs, du cadre réglementaire et des attentes de la formation. Tour de table et recueil des besoins des stagiaires.<br><br>
+      <em>Détail complet disponible dans <a href="programme.pdf">programme.pdf</a>.</em>
+    </div>
+  </div>
+
+  <div class="acc">
+    <button class="acc-btn" onclick="tog(this)" aria-expanded="false">
+      Module 2 — Contenus et compétences visés
+      <span class="acc-icon" aria-hidden="true">+</span>
+    </button>
+    <div class="acc-body">
+      Apports théoriques et pratiques en lien avec les objectifs de la formation. Mises en situation et exercices d'application.<br><br>
+      <em>Détail complet disponible dans <a href="programme.pdf">programme.pdf</a>.</em>
+    </div>
+  </div>
+
+  <div class="acc">
+    <button class="acc-btn" onclick="tog(this)" aria-expanded="false">
+      Module 3 — Évaluation et bilan
+      <span class="acc-icon" aria-hidden="true">+</span>
+    </button>
+    <div class="acc-body">
+      Évaluation des acquis, feedback collectif et remise des attestations. Questions / réponses avec le formateur.<br><br>
+      <em>Détail complet disponible dans <a href="programme.pdf">programme.pdf</a>.</em>
+    </div>
+  </div>
+</section>
+
+<hr class="sep">
+
+<section class="wrap" id="formateur">
+  <h2 class="stitle">Mot du formateur</h2>
+  <div class="vid-block">
+    <i class="ti ti-brand-youtube" style="font-size:3rem;color:#00536A" aria-hidden="true"></i>
+    <p>La vidéo de présentation de Marcelus WALLACE est disponible directement sur YouTube. Cliquez ci-dessous pour la visionner.</p>
+    <a class="vid-btn" href="https://www.youtube.com/watch?v=tf26LA4lf54" target="_blank" rel="noopener">
+      <i class="ti ti-player-play" aria-hidden="true"></i> Voir la vidéo sur YouTube
+    </a>
+    <span class="vid-notice">S'ouvre dans un nouvel onglet · YouTube</span>
+  </div>
+</section>
+
+<hr class="sep">
+
+<section class="wrap" id="lieu">
+  <h2 class="stitle">Lieu de la formation</h2>
+  <div class="map-wrap">
+    <iframe
+      src="https://www.google.com/maps?q=16+boulevard+Massena+75013+Paris&output=embed"
+      title="Carte — 16 boulevard Masséna, 75013 Paris"
+      loading="lazy" allowfullscreen></iframe>
+  </div>
+  <p class="map-addr"><i class="ti ti-map-pin" aria-hidden="true"></i> 16 boulevard Masséna, 75013 Paris</p>
+</section>
+
+<hr class="sep">
+
+<section class="wrap" id="documents">
+  <h2 class="stitle">Documents à télécharger</h2>
+  <div class="dl-row">
+    <a class="dl-btn" href="programme.pdf" download>
+      <i class="ti ti-file-download" aria-hidden="true"></i> Programme de la formation
+    </a>
+    <a class="dl-btn" href="livret-stagiaire.pdf" download>
+      <i class="ti ti-file-download" aria-hidden="true"></i> Livret stagiaire
+    </a>
+  </div>
+</section>
+
+<hr class="sep">
+
+<footer class="ftr" id="contact">
+  <div class="ftr-in">
+    <div>
+      <h3>Contact formateur</h3>
+      <p>Marcelus WALLACE</p>
+      <p><a href="mailto:marcelus.wallace@hotmail.com">marcelus.wallace@hotmail.com</a></p>
+      <p><a href="tel:+330678953445">+33 06 78 95 34 45</a></p>
+    </div>
+    <div>
+      <h3>Accessibilité & Inclusion</h3>
+      <p>APF France handicap s'engage pour l'inclusion de chaque stagiaire, quelle que soit sa situation de handicap.</p>
+      <p style="margin-top:.45rem"><a href="https://www.apf-francehandicap.org" target="_blank" rel="noopener">Politique handicap et référent inclusion →</a></p>
+    </div>
+    <div>
+      <h3>Organisme de formation</h3>
+      <p>APF France handicap</p>
+      <p><em>— Risquer l'impossible —</em></p>
+      <p style="margin-top:.45rem"><a href="https://www.apf-francehandicap.org" target="_blank" rel="noopener">apf-francehandicap.org</a></p>
+    </div>
+  </div>
+  <div class="ftr-btm">© 2026 APF France handicap — Formation "Bluse à Toulouse" — Tous droits réservés</div>
+</footer>
+
+<script>
+function tog(btn){
+  const body=btn.nextElementSibling;
+  const icon=btn.querySelector('.acc-icon');
+  const wasOpen=body.classList.contains('open');
+  document.querySelectorAll('.acc-body.open').forEach(b=>{
+    b.classList.remove('open');
+    b.previousElementSibling.querySelector('.acc-icon').classList.remove('open');
+    b.previousElementSibling.setAttribute('aria-expanded','false');
+  });
+  if(!wasOpen){
+    body.classList.add('open');
+    icon.classList.add('open');
+    btn.setAttribute('aria-expanded','true');
+  }
+}
+</script>
